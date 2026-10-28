@@ -1,206 +1,88 @@
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { AlertTriangle, Gift, Clock, Sparkles, HelpCircle, ShieldCheck, ArrowRight, RotateCcw } from 'lucide-react'
+import { motion } from 'framer-motion'
+import { Mail, Search, ShieldCheck, ArrowUpRight, Eye, RotateCcw, Flag, Clock, Gift, UserX, Sparkles } from 'lucide-react'
+import './Slide03WhyLearnThis.css'
+import { PhysicalSafetyActivity } from './PhysicalSafetyActivity'
 
-// Slide 03 — "Why are we learning this?" Child-friendly Phishing & Online Safety Spotter
+const examples = [
+  { label: 'The account scare', icon: Clock, sender: 'Account Support', initials: 'AS', address: 'support@account-check.example', subject: 'Action required: your account is at risk', message: 'Your account will be deleted in 24 hours unless you confirm your details.', request: 'Click below and enter your password to keep your account active.', action: 'Keep my account', url: 'account-check.example/verify', trick: 'A deadline that makes you panic', detail: 'The threat of losing your account pressures you to act before you think.' },
+  { label: 'The surprise prize', icon: Gift, sender: 'Rewards Team', initials: 'RT', address: 'prizes@bonus-rewards.example', subject: 'You’ve been selected for a FREE gaming gift card!', message: 'Congratulations! You have won a gaming gift card. Your prize expires in 24 hours.', request: 'Click below and enter your password to unlock your reward.', action: 'Claim my reward', url: 'bonus-rewards.example/claim', trick: 'A reward that feels too good', detail: 'An unexpected prize and a short deadline tempt you to rush.' },
+]
+
 export function Slide03WhyLearnThis() {
-  const [currentExample, setCurrentExample] = useState<0 | 1>(0)
-  const [showHint, setShowHint] = useState(false)
-
-  const toggleExample = () => {
-    setCurrentExample(prev => (prev === 0 ? 1 : 0))
-    setShowHint(false) // reset hint on flip
-  }
-
+  const [activity, setActivity] = useState<'phishing' | 'physical'>('phishing')
+  const [currentExample, setCurrentExample] = useState(0)
+  const [revealed, setRevealed] = useState(false)
+  const example = examples[currentExample]
   return (
-    <div className="flex flex-col items-center justify-between h-full w-full overflow-hidden" style={{ padding: '16px 40px 20px' }}>
-
-      {/* Top Header */}
-      <motion.div
-        initial={{ opacity: 0, y: -15 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="text-center flex-shrink-0"
-      >
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full mb-1.5"
-          style={{ background: 'var(--label-bg)', border: '1px solid var(--label-border)' }}>
-          <Sparkles size={14} style={{ color: 'var(--accent)' }} />
-          <span className="text-xs font-mono font-semibold tracking-widest uppercase" style={{ color: 'var(--accent)' }}>
-            Real-Life Cyber Superpower
-          </span>
-        </div>
-        <h2 className="font-space font-bold text-3xl md:text-4xl tracking-tight mb-1" style={{ color: 'var(--text)' }}>
-          Why are we learning this?
-        </h2>
-        <p className="text-base md:text-lg max-w-2xl mx-auto" style={{ color: 'var(--text-muted)' }}>
-          To spot phishing messages, avoid unsafe links, and protect our personal information.
-        </p>
-      </motion.div>
-
-      {/* Center Interactive Card */}
-      <div className="w-full max-w-3xl flex-1 flex flex-col justify-center items-center py-2 min-h-0">
-        <motion.div
-          onClick={toggleExample}
-          whileHover={{ scale: 1.015 }}
-          whileTap={{ scale: 0.985 }}
-          className="w-full cursor-pointer rounded-2xl relative cyber-border shadow-2xl overflow-hidden transition-all duration-300"
-          style={{
-            background: 'var(--card)',
-            border: currentExample === 0 ? '2px solid rgba(239,68,68,0.45)' : '2px solid rgba(245,158,11,0.45)',
-            boxShadow: currentExample === 0 ? '0 0 35px rgba(239,68,68,0.18)' : '0 0 35px rgba(245,158,11,0.18)',
-            padding: '24px 32px',
-          }}
-        >
-          {/* Card Top Indicator & Toggle Hint */}
-          <div className="flex items-center justify-between mb-4">
-            <span
-              className="text-xs font-mono font-bold px-3 py-1 rounded-full uppercase tracking-wider"
-              style={{
-                background: currentExample === 0 ? 'rgba(239,68,68,0.15)' : 'rgba(245,158,11,0.15)',
-                color: currentExample === 0 ? '#f87171' : '#fbbf24',
-                border: currentExample === 0 ? '1px solid rgba(239,68,68,0.35)' : '1px solid rgba(245,158,11,0.35)',
-              }}
-            >
-              Phishing Example {currentExample + 1} of 2 · {currentExample === 0 ? 'Fear / Urgency Trick' : 'Reward / Greed Trick'}
-            </span>
-
-            <div className="flex items-center gap-1.5 text-xs font-mono font-semibold" style={{ color: 'var(--accent)' }}>
-              <span>Click card to switch example</span>
-              <ArrowRight size={14} />
-            </div>
-          </div>
-
-          <AnimatePresence mode="wait">
-            {currentExample === 0 ? (
-              /* Example 1: Threat / Deletion */
-              <motion.div
-                key="example-0"
-                initial={{ opacity: 0, rotateY: -30, y: 15 }}
-                animate={{ opacity: 1, rotateY: 0, y: 0 }}
-                exit={{ opacity: 0, rotateY: 30, y: -15 }}
-                transition={{ duration: 0.4 }}
-                className="flex flex-col items-center text-center"
-              >
-                {/* Warning Icon + 24H Countdown Pill */}
-                <div className="flex items-center gap-3 mb-3">
-                  <div style={{
-                    width: 52, height: 52, borderRadius: '14px',
-                    background: 'rgba(239,68,68,0.18)', border: '1px solid rgba(239,68,68,0.45)',
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    boxShadow: '0 0 20px rgba(239,68,68,0.35)',
-                  }}>
-                    <AlertTriangle size={28} style={{ color: '#ef4444' }} strokeWidth={2.2} />
-                  </div>
-
-                  <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-xl border"
-                    style={{ background: 'rgba(239,68,68,0.12)', borderColor: 'rgba(239,68,68,0.4)', color: '#fca5a5' }}>
-                    <Clock size={18} className="animate-pulse" style={{ color: '#ef4444' }} />
-                    <span className="font-mono font-bold text-sm tracking-wider">DEADLINE: 24:00:00</span>
-                  </div>
-                </div>
-
-                {/* Phishing Message */}
-                <div className="w-full rounded-xl p-4 mb-3" style={{ background: 'rgba(0,0,0,0.15)', border: '1px dashed rgba(239,68,68,0.35)' }}>
-                  <p className="font-space font-bold text-xl md:text-2xl leading-snug" style={{ color: 'var(--text)' }}>
-                    “Your account will be deleted in 24 hours. Click here to keep it.”
-                  </p>
-                </div>
-              </motion.div>
-            ) : (
-              /* Example 2: Fake Reward / Gift */
-              <motion.div
-                key="example-1"
-                initial={{ opacity: 0, rotateY: 30, y: 15 }}
-                animate={{ opacity: 1, rotateY: 0, y: 0 }}
-                exit={{ opacity: 0, rotateY: -30, y: -15 }}
-                transition={{ duration: 0.4 }}
-                className="flex flex-col items-center text-center"
-              >
-                {/* Gift Icon + 24H Countdown Pill */}
-                <div className="flex items-center gap-3 mb-3">
-                  <div style={{
-                    width: 52, height: 52, borderRadius: '14px',
-                    background: 'rgba(245,158,11,0.18)', border: '1px solid rgba(245,158,11,0.45)',
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    boxShadow: '0 0 20px rgba(245,158,11,0.35)',
-                  }}>
-                    <Gift size={28} style={{ color: '#f59e0b' }} strokeWidth={2.2} />
-                  </div>
-
-                  <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-xl border"
-                    style={{ background: 'rgba(245,158,11,0.12)', borderColor: 'rgba(245,158,11,0.4)', color: '#fde68a' }}>
-                    <Clock size={18} className="animate-pulse" style={{ color: '#f59e0b' }} />
-                    <span className="font-mono font-bold text-sm tracking-wider">EXPIRES IN: 24:00:00</span>
-                  </div>
-                </div>
-
-                {/* Phishing Message */}
-                <div className="w-full rounded-xl p-4 mb-3" style={{ background: 'rgba(0,0,0,0.15)', border: '1px dashed rgba(245,158,11,0.35)' }}>
-                  <p className="font-space font-bold text-xl md:text-2xl leading-snug" style={{ color: 'var(--text)' }}>
-                    “You’ve won a reward! Click here to claim it within 24 hours.”
-                  </p>
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-
-          {/* Discussion Question & Hint reveal */}
-          <div className="mt-2 pt-3 border-t border-cyan-500/15 flex flex-col items-center text-center"
-            onClick={e => e.stopPropagation()} /* don't flip card when clicking discussion */>
-            <p className="font-space font-semibold text-base md:text-lg mb-2 flex items-center justify-center gap-2" style={{ color: 'var(--text)' }}>
-              <HelpCircle size={18} style={{ color: 'var(--accent)' }} />
-              <span>What seems suspicious? What should you do?</span>
-            </p>
-
-            {/* Hint Toggle Button */}
-            {!showHint ? (
-              <motion.button
-                whileHover={{ scale: 1.04 }}
-                whileTap={{ scale: 0.96 }}
-                onClick={() => setShowHint(true)}
-                className="btn-cyber rounded-xl px-4 py-1.5 text-xs font-mono font-bold tracking-wider"
-              >
-                Reveal Teacher Hint
-              </motion.button>
-            ) : (
-              <motion.div
-                initial={{ opacity: 0, scale: 0.92, y: 5 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
-                className="flex items-center gap-2.5 px-5 py-2.5 rounded-xl"
-                style={{
-                  background: 'rgba(74,222,128,0.14)',
-                  border: '1.5px solid rgba(74,222,128,0.45)',
-                  boxShadow: '0 0 20px rgba(74,222,128,0.2)',
-                }}
-              >
-                <ShieldCheck size={20} style={{ color: '#4ade80', flexShrink: 0 }} />
-                <span className="font-space font-bold text-base md:text-lg" style={{ color: '#86efac' }}>
-                  “Pause. Don’t click. Ask a trusted adult.”
-                </span>
-                <button
-                  onClick={() => setShowHint(false)}
-                  className="ml-2 text-xs opacity-60 hover:opacity-100 transition-opacity"
-                  title="Hide hint"
-                >
-                  <RotateCcw size={14} />
-                </button>
-              </motion.div>
-            )}
-          </div>
-        </motion.div>
+    <section className="phishing-slide" aria-labelledby="phishing-title" onKeyDown={event => { if (event.key === ' ' && (event.target as HTMLElement).closest('button')) event.stopPropagation() }}>
+      <header className="phishing-heading">
+        <span className="phishing-eyebrow"><ShieldCheck size={15} /> REAL-LIFE CYBER SKILLS</span>
+        <h2 id="phishing-title">Why are we learning this?</h2>
+        <p>To stay safe online and prevent injuries, electric shocks, and fires when using computers.</p>
+      </header>
+      <div className="safety-activity-tabs" role="tablist" aria-label="Safety activities"
+        onKeyDown={event => {
+          if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return
+          event.preventDefault()
+          event.stopPropagation()
+          const next = event.key === 'Home' ? 'phishing' : event.key === 'End' ? 'physical' : activity === 'phishing' ? 'physical' : 'phishing'
+          setActivity(next)
+          document.getElementById(`tab-${next}`)?.focus()
+        }}>
+        <button id="tab-phishing" role="tab" aria-selected={activity === 'phishing'} aria-controls="panel-phishing" tabIndex={activity === 'phishing' ? 0 : -1} onClick={() => setActivity('phishing')}><Mail size={18} />Phishing</button>
+        <button id="tab-physical" role="tab" aria-selected={activity === 'physical'} aria-controls="panel-physical" tabIndex={activity === 'physical' ? 0 : -1} onClick={() => setActivity('physical')}><ShieldCheck size={18} />Physical Safety</button>
       </div>
-
-      {/* Classroom takeaway footer */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5 }}
-        className="flex items-center justify-center gap-3 text-xs md:text-sm font-mono flex-shrink-0"
-        style={{ color: 'var(--text-faint)' }}
-      >
-        <span>🚩 Golden Rule:</span>
-        <strong style={{ color: 'var(--accent)' }}>Urgent timer (24 hrs) + &ldquo;Click here&rdquo; = 99% a scam!</strong>
-      </motion.div>
-    </div>
+      <div id="panel-phishing" role="tabpanel" aria-labelledby="tab-phishing" hidden={activity !== 'phishing'}>
+      <div className="phishing-workspace">
+        <div className="phishing-toolbar">
+          <div className="phishing-case-label"><Search size={17} /><span>THE PHISHING DETECTIVE</span></div>
+          <div className="phishing-example-picker" aria-label="Choose a phishing example">
+            {examples.map((item, index) => <button key={item.label} type="button" aria-pressed={index === currentExample} onClick={() => { setCurrentExample(index); setRevealed(false) }}><item.icon size={15} /><span>{item.label}</span></button>)}
+          </div>
+        </div>
+        <div className="phishing-investigation">
+          <motion.article key={currentExample} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.25 }} className={`phishing-email ${revealed ? 'is-revealed' : ''}`} aria-label="Fictional phishing email">
+            <div className="phishing-email-chrome"><span><Mail size={16} /> Inbox <span className="phishing-unread">1</span></span><span className="phishing-demo">CLASSROOM EXAMPLE</span></div>
+            <div className="phishing-email-content">
+              <h3>{example.subject}</h3>
+              <div className="phishing-sender">
+                <div className="phishing-avatar">{example.initials}</div>
+                <div className="phishing-sender-details"><strong>{example.sender}</strong><div className="phishing-address"><span>{example.address}</span><span className="phishing-marker">1</span></div><small>to you</small></div><time>9:41 AM</time>
+              </div>
+              <div className="phishing-message">
+                <p>Hi there,</p>
+                <div className="phishing-body-callout">
+                  <span className={`phishing-body-icon ${currentExample === 0 ? 'account-warning' : 'prize-reward'}`} aria-hidden="true">
+                    {currentExample === 0 ? <UserX size={29} strokeWidth={1.8} /> : <Gift size={29} strokeWidth={1.8} />}
+                    {currentExample === 1 && <Sparkles className="phishing-prize-sparkle" size={14} />}
+                  </span>
+                  <p className="phishing-pressure"><strong>{example.message}</strong><span className="phishing-marker">2</span></p>
+                </div>
+                <p>{example.request}</p>
+                <div className="phishing-link-example"><span className="phishing-fake-button">{example.action}<ArrowUpRight size={17} /></span><span className="phishing-marker">3</span></div><span className="phishing-url">{example.url}</span>
+              </div>
+            </div>
+            <div className="phishing-email-note"><ShieldCheck size={14} /> Practice email · All addresses and links are fictional.</div>
+          </motion.article>
+          <aside className="phishing-detective">
+            <div className="phishing-mission-label"><Flag size={15} /> YOUR MISSION <span>0{currentExample + 1} / 02</span></div>
+            <h3>Would you trust it?</h3><p className="phishing-mission-intro">Look closely. What feels wrong about this message?</p>
+            <ol className="phishing-clues" aria-live="polite">
+              {[
+                ['Check the sender', 'An unfamiliar address', 'A familiar display name doesn’t prove who sent the message.', 'Who is really sending this?'],
+                ['Notice the emotion', example.trick, example.detail, 'Are they trying to rush or excite you?'],
+                ['Inspect the request', 'A link asking for your password', 'Open the official app or website yourself to check the message.', 'What do they want you to share?'],
+              ].map(([prompt, title, detail, question], index) => <li key={prompt} className={revealed ? 'is-revealed' : ''}><span className="phishing-clue-number">{index + 1}</span><div><h4>{revealed ? title : prompt}</h4><p>{revealed ? detail : question}</p></div></li>)}
+            </ol>
+            <button className="phishing-reveal" type="button" aria-expanded={revealed} onClick={() => setRevealed(!revealed)}>{revealed ? <RotateCcw size={17} /> : <Eye size={17} />}{revealed ? 'Hide clues & try again' : 'Reveal the 3 red flags'}</button>
+            <div className="phishing-discuss">{revealed ? 'Spotted them? Explain your safest next step.' : 'Discuss with a partner, then reveal the clues.'}</div>
+          </aside>
+        </div>
+      </div>
+      <footer className="phishing-takeaway"><span className="phishing-shield"><ShieldCheck size={23} /></span><div><span>YOUR SAFEST NEXT MOVE</span><p>Pause. Don’t click. <strong>Ask a trusted adult.</strong></p></div></footer>
+      </div>
+      <div id="panel-physical" role="tabpanel" aria-labelledby="tab-physical" hidden={activity !== 'physical'}><PhysicalSafetyActivity /></div>
+    </section>
   )
 }

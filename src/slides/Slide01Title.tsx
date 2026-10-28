@@ -135,25 +135,14 @@ export function Slide01Title() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.75, duration: 0.7 }}
-            className="font-space font-bold text-6xl md:text-7xl tracking-tight mb-2"
+            className="font-space font-bold tracking-tight mb-6 whitespace-nowrap"
             style={{
+              fontSize: 'clamp(24px, 6.5vw, 72px)',
               background: 'var(--hero-gradient)',
               WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
             }}
           >
-            Safety &amp;
-          </motion.h1>
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.88, duration: 0.7 }}
-            className="font-space font-bold text-6xl md:text-7xl tracking-tight mb-6"
-            style={{
-              background: 'var(--hero-gradient)',
-              WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
-            }}
-          >
-            Security
+            Safety &amp; Security
           </motion.h1>
 
           {/* Badge */}
