@@ -5,6 +5,7 @@ import { BackgroundEffects } from '@/components/BackgroundEffects'
 import { SlideNavigation } from '@/components/SlideNavigation'
 import { Slide01Title } from '@/slides/Slide01Title'
 import { Slide02Contents } from '@/slides/Slide02Contents'
+import { Slide03WhyLearnThis } from '@/slides/Slide03WhyLearnThis'
 import { Slide03PhysicalSafety1 } from '@/slides/Slide03PhysicalSafety1'
 import { Slide05PhysicalSafety3 } from '@/slides/Slide05PhysicalSafety3'
 import { Slide06ESafety1 } from '@/slides/Slide06ESafety1'
@@ -26,6 +27,7 @@ import { useTheme } from '@/lib/ThemeContext'
 const SLIDES = [
   { id: 'title',       component: Slide01Title,           label: 'Ch 8 · Safety & Security' },
   { id: 'contents',   component: Slide02Contents,         label: 'Chapter Contents' },
+  { id: 'why-learn',  component: Slide03WhyLearnThis,     label: 'Why Are We Learning This?' },
   { id: 'ps-1',       component: Slide03PhysicalSafety1,  label: '8.1 · Physical Hazards' },
   { id: 'ps-3',       component: Slide05PhysicalSafety3,  label: '8.1 · Definitions & Scenarios' },
   { id: 'es-1',       component: Slide06ESafety1,         label: '8.2 · DPA & Personal Data' },
