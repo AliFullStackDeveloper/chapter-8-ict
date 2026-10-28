@@ -1,0 +1,1877 @@
+Create a COMPLETE, HIGHLY INTERACTIVE, ACTIVITY-BASED teaching presentation for:
+
+CAMBRIDGE IGCSE ICT – PAPER 2
+CHAPTER 20: SPREADSHEETS
+
+IMPORTANT:
+This is a completely NEW CHAPTER presentation.
+
+DESIGN / THEME:
+- Keep the CURRENT/EXISTING PRESENTATION THEME exactly as it is.
+- Do NOT change the existing theme, background, typography style, visual identity, or overall design language.
+- REMOVE all previous/old chapter icons, illustrations, images and irrelevant visual elements.
+- Add NEW icons relevant specifically to the Spreadsheet chapter.
+- Use icons such as spreadsheet, cell, row, column, formula, calculator, function, search, filter, sort, table, data, formatting, print, page layout, etc.
+- Icons should support navigation and interaction, not simply decorate the slide.
+- Use the existing theme's style for all new icons.
+- Do not reuse icons from the previous chapter.
+
+SOURCE ACCURACY:
+- Base the lesson content ONLY on the supplied Cambridge IGCSE ICT Spreadsheet chapter/PDF.
+- Follow the terminology, concepts, examples and level of detail used in the textbook.
+- Do NOT add advanced spreadsheet concepts that are outside this chapter.
+- Do NOT make the content unnecessarily deep.
+- Definitions should be short and student-friendly.
+- Practical examples should closely follow the type of examples used in the textbook.
+- Include all important concepts, activities and practical skills from the chapter.
+- Where the textbook marks a feature as dependent on newer Excel versions, clearly indicate this.
+- Do not replace textbook terminology with unrelated terminology.
+
+TARGET:
+Cambridge IGCSE ICT students preparing specifically for PAPER 2 practical examination.
+
+PRESENTATION STYLE:
+This must NOT be a normal lecture presentation.
+
+Every concept should follow:
+
+CONCEPT
+→ SHORT DEFINITION
+→ VISUAL EXAMPLE
+→ LIVE SPREADSHEET WORKING
+→ STUDENT INTERACTION
+→ CHECK ANSWER / REVEAL
+→ EXAM-STYLE PRACTICAL TASK
+
+INTERACTIVITY:
+- Use click-to-reveal cards.
+- Use clickable spreadsheet cells.
+- Use tabs/buttons.
+- Use "Try It", "Hint", "Check Answer", "Reveal Formula", "Reveal Result", "Next Challenge".
+- Hide answers until students interact.
+- Use hotspots on spreadsheet screenshots/mockups.
+- Allow students to identify errors by clicking cells.
+- Use multiple-choice questions where useful.
+- Use drag/fill style visual demonstrations where possible.
+- Use before/after comparisons.
+- Do NOT put every answer on the screen immediately.
+- Every major section must have at least one practical activity.
+
+VISUALS:
+- Prefer realistic spreadsheet tables/mockups over generic illustrations.
+- Use small screenshots/visual representations of Excel-style interfaces when explaining menu commands.
+- Use relevant icons.
+- Use diagrams for relative/absolute references.
+- Use highlighted cells and arrows to show formula changes.
+- Use simple tables for functions and lookup examples.
+- Use visual print-preview examples for page layout.
+- Images should be educational and directly related to the task.
+- Do not use decorative stock images that do not help learning.
+
+==================================================
+SECTION 1 — CREATE A DATA MODEL
+==================================================
+
+SLIDE 1 — CHAPTER INTRODUCTION
+
+Title:
+"Chapter 20 – Spreadsheets"
+
+Introduce:
+- What a spreadsheet is
+- What a spreadsheet model is
+- Why spreadsheet models are used to explore different possible answers.
+
+Use a simple spreadsheet visual.
+
+Interactive:
+Click:
+"What is a Spreadsheet?"
+"What is a Spreadsheet Model?"
+"Why use a Model?"
+
+Reveal short student-friendly explanations.
+
+Add a "Start Lesson" button.
+
+==================================================
+
+SLIDE 2 — SPREADSHEET BASICS
+
+Topic:
+20.1.1 Create and edit a spreadsheet model
+
+Explain:
+- Cells
+- Rows
+- Columns
+- Cell addresses/references
+- Active/current cell
+- Basic spreadsheet structure
+
+Create an interactive spreadsheet grid.
+
+Students click:
+- Cell
+- Row
+- Column
+- Cell address
+
+Example:
+If the selected cell is E9, show:
+"Cell address = E9"
+
+If another highlighted cell is C6:
+"Cell address = C6"
+
+Activity:
+"Click the cell C6."
+"Click Row 6."
+"Click Column C."
+
+==================================================
+
+SLIDE 3 — CREATE AND EDIT A SPREADSHEET
+
+Teach:
+- Enter data
+- Edit data
+- Change cell contents
+- Insert a cell
+- Insert a row
+- Insert a column
+- Delete a cell
+- Delete a row
+- Delete a column
+
+Use simple visual demonstrations.
+
+Show:
+Right-click → Insert
+Right-click → Delete
+
+Interactive:
+"Which option inserts an entire row?"
+"Which option deletes an entire column?"
+
+Student activity:
+Give a small spreadsheet and ask students to:
+1. Enter two numbers.
+2. Edit one number.
+3. Insert a row.
+4. Delete a column.
+
+==================================================
+
+SLIDE 4 — CREATE YOUR FIRST FORMULA
+
+Topic:
+20.1.2 Create formulae using cell references
+
+Definition:
+A formula starts with an "=" sign and performs a calculation.
+
+Example:
+
+A2 = 5
+A3 = 4
+A4 = =A2*A3
+
+Show:
+Input cells → Formula → Result
+
+Explain:
+- Formula is entered into the cell.
+- Result is displayed in the cell.
+- Formula can be viewed in the Formula Bar.
+
+Interactive:
+Click A4 → reveal:
+"Formula: =A2*A3"
+"Result: 20"
+
+Activity:
+Students enter two numbers and create a multiplication formula.
+
+==================================================
+
+SLIDE 5 — ARITHMETIC OPERATORS
+
+Topic:
+20.1.2 / 20.1.8
+
+Teach exactly these spreadsheet operators:
+
+Addition:
++
+
+Subtraction:
+-
+
+Multiplication:
+*
+
+Division:
+/
+
+Indices:
+^
+
+Use a clickable operator table.
+
+Example:
+
+=B1+B2
+=B1-B2
+=B1*B2
+=B1/B2
+=B1^B2
+
+Interactive:
+Click each operator → show meaning + example + result.
+
+Mini activity:
+Given:
+B1 = 4
+B2 = 2
+
+Students predict:
+Sum
+Difference
+Product
+Division
+Power
+
+Then click "Reveal Answers".
+
+==================================================
+
+SLIDE 6 — ORDER OF MATHEMATICAL OPERATIONS
+
+Topic:
+20.1.3
+
+Explain the textbook's order:
+
+B – Brackets
+I – Indices
+DM – Division and Multiplication
+AS – Addition and Subtraction
+
+Explain:
+- Division and multiplication have equal priority and are processed left to right.
+- Addition and subtraction have equal priority and are processed left to right.
+
+Use textbook-style example:
+
+7 + (6 × 5² + 3)
+
+Show step-by-step calculation.
+
+Interactive:
+"Which part is calculated first?"
+
+Create 3 short challenges:
+1. 5 + 3 × 2
+2. (5 + 3) × 2
+3. 20 ÷ 5 × 2
+
+Reveal working after each answer.
+
+==================================================
+
+SLIDE 7 — CELL REFERENCING
+
+Topic:
+20.1.4
+
+Definition:
+A cell reference identifies a cell used in a formula.
+
+Teach:
+
+RELATIVE REFERENCING
+Example:
+B2
+B3
+
+Explain:
+References change when the formula is replicated.
+
+Show:
+
+=B2+B3
+
+copied down becomes:
+
+=B3+B4
+
+Use animation/arrows.
+
+Interactive:
+Click "Copy Formula" → show the reference changing.
+
+==================================================
+
+SLIDE 8 — ABSOLUTE REFERENCING
+
+Explain:
+An absolute reference remains fixed when a formula is replicated.
+
+Example:
+
+=$B$2+$B$3
+
+Explain the "$" signs.
+
+Show:
+
+Original:
+=$B$2+$B$3
+
+Copied down:
+=$B$2+$B$3
+
+Interactive:
+Students choose:
+Which reference stays fixed?
+
+B2
+$B$2
+B$2
+$B2
+
+Reveal answer.
+
+==================================================
+
+SLIDE 9 — MIXED REFERENCING
+
+Explain mixed references using:
+
+$B2
+B$2
+
+Show:
+- $ before column → column fixed
+- $ before row → row fixed
+
+Use a visual grid to show what changes and what remains fixed.
+
+Create a practical example using a times-table style model.
+
+Interactive:
+Students predict the formula after copying.
+
+==================================================
+
+SLIDE 10 — REPLICATE FORMULAE
+
+Topic:
+20.1.5
+
+Explain:
+- Copy
+- Paste
+- Drag/fill handle
+- Replicating formulae
+- Relative references changing
+- Absolute references remaining fixed
+
+Use textbook-style times table:
+
+Number stored in A1.
+
+A3:A12 = 1 to 10
+
+B3:
+=A3*$A$1
+
+Show B3 copied to B4:B12.
+
+Interactive animation:
+Drag B3 down → show formula references changing.
+
+==================================================
+
+SLIDE 11 — DISPLAY VALUES OR FORMULAE
+
+Teach:
+- Display spreadsheet values.
+- Display spreadsheet formulae.
+- Show Formulas option.
+- Why students may need to show formulae in Paper 2 evidence/printouts.
+
+Create a before/after:
+
+VALUE VIEW:
+16
+
+FORMULA VIEW:
+=A3*$A$1
+
+Interactive button:
+"Show Formula"
+
+==================================================
+
+SLIDE 12 — DATA ENTRY ACCURACY
+
+Topic:
+20.1.6
+
+Definition:
+Data must be entered with 100% accuracy.
+
+Explain:
+- One incorrect value can affect calculations.
+- Formulae must also be entered accurately.
+- Do not unnecessarily insert/delete rows or columns.
+- Check data carefully before completing calculations.
+
+Create an "ERROR HUNT".
+
+Example spreadsheet containing:
+- Wrong number
+- Missing value
+- Incorrect formula
+
+Students click the incorrect cell.
+
+Reveal:
+"What is wrong?"
+"How should it be corrected?"
+
+==================================================
+
+SLIDE 13 — MERGE CELLS AND WRAP TEXT
+
+Topics:
+20.1.7
+20.3.3
+
+Explain:
+- Merge cells
+- Merge & Center
+- Wrap text
+- Increase row height when necessary.
+
+Example:
+
+A1:
+"Please enter two numbers in cells B2 and B3"
+
+Merge A1:B1.
+
+Then wrap text.
+
+Show BEFORE and AFTER.
+
+Interactive:
+Click "Merge"
+→ cells merge.
+
+Click "Wrap"
+→ text moves onto multiple lines.
+
+Student activity:
+Students reproduce the example.
+
+==================================================
+
+SLIDE 14 — USE FORMULAE
+
+Topic:
+20.1.8
+
+Review operators through a practical task.
+
+Create:
+
+First Number
+Second Number
+Sum
+Difference
+Product
+Division
+Power
+
+Students enter their own two numbers.
+
+Require formulae such as:
+
+=B1+B2
+=B1-B2
+=B1*B2
+=B1/B2
+=B1^B2
+
+Interactive:
+"Check Formula"
+
+Reveal correct formula.
+
+==================================================
+
+SLIDE 15 — NAMED CELLS AND RANGES
+
+Topic:
+20.1.9
+
+Definition:
+A cell or range can be given a meaningful name and that name can be used in formulae.
+
+Explain:
+Named Cell:
+Unit
+
+Named Range:
+Rate
+
+Named Range:
+Sold
+
+Show how naming can make a spreadsheet easier to understand.
+
+Interactive:
+Click:
+"Cell"
+"Range"
+"Formula using Name"
+
+Example:
+=SUM(MyRange)
+
+Activity:
+Students identify whether:
+"Unit" is a named cell or range.
+"Rate" is a named range.
+
+==================================================
+
+SLIDE 16 — FORMULAE VS FUNCTIONS
+
+Topic:
+20.1.10
+
+Definition:
+
+Formula:
+A calculation created using operators, e.g.
+=B1+B2
+
+Function:
+A predefined spreadsheet operation such as:
+SUM
+AVERAGE
+MAX
+MIN
+
+Show side-by-side comparison.
+
+Interactive:
+Click each example → reveal explanation.
+
+Mini challenge:
+"Is this a formula or function?"
+
+=B2+B3
+=SUM(B2:B8)
+
+==================================================
+SECTION 2 — FUNCTIONS
+==================================================
+
+SLIDE 17 — SUM FUNCTION
+
+Explain:
+SUM adds values together.
+
+Examples:
+=SUM(B4:B8)
+=SUM(D3,D8,D12)
+=SUM(D5:D8,F2)
+=SUM(MyRange)
+
+Keep examples at textbook level.
+
+Show equivalent formula for one example.
+
+Interactive:
+Students select the correct SUM range.
+
+Practical:
+Calculate total hours worked.
+
+==================================================
+
+SLIDE 18 — AVERAGE, MAX AND MIN
+
+Teach:
+
+AVERAGE
+Calculates the mean.
+
+MAX
+Finds the largest value.
+
+MIN
+Finds the smallest value.
+
+Examples:
+
+=AVERAGE(B4:B8)
+=MAX(B4:B8)
+=MIN(B4:B8)
+
+Use the textbook-style working-hours table.
+
+Interactive:
+Students click:
+"Total"
+"Average"
+"Maximum"
+"Minimum"
+
+Each button reveals the correct function.
+
+==================================================
+
+SLIDE 19 — COUNT AND COUNTA
+
+Explain:
+
+COUNT:
+Counts numeric values in a range.
+
+COUNTA:
+Counts cells containing numeric OR text values, excluding blanks.
+
+Examples:
+
+=COUNT(A2:A19)
+
+=COUNTA(A2:A19)
+
+Also explain how COUNTA and COUNT can be combined to determine the number of text entries.
+
+Interactive:
+Give a small list containing:
+Numbers
+Names
+Blank cells
+
+Ask:
+"How many values will COUNT count?"
+"How many will COUNTA count?"
+
+Reveal answers.
+
+==================================================
+
+SLIDE 20 — COUNTIF
+
+Topic:
+20.1.11
+
+Definition:
+COUNTIF counts cells in a range that meet a specified condition.
+
+Conditions can include:
+- Text
+- Numbers
+- Inequalities
+- Cell references
+
+Examples:
+
+=COUNTIF($B$3:$B$21,"Director")
+
+=COUNTIF($B$3:$B$21,A24)
+
+=COUNTIF($C$3:$C$21,"<5")
+
+=COUNTIF($C$3:$C$21,">=10")
+
+Explain why absolute references can be useful when replicating the formula.
+
+Interactive:
+Students choose the correct COUNTIF formula for:
+"Count employees with less than 5 years' experience."
+
+==================================================
+
+SLIDE 21 — IF FUNCTION
+
+Explain the three parts of IF:
+
+1. Condition
+2. What happens if condition is TRUE
+3. What happens if condition is FALSE
+
+Textbook-style example:
+
+=IF(A1=5,A2*0.05,"No discount")
+
+Then use a practical experience example:
+
+=IF(C3>=10,"Very experienced","Not experienced")
+
+Interactive:
+Show the condition and let students predict the output.
+
+==================================================
+
+SLIDE 22 — REPLICATING IF FUNCTIONS
+
+Show how an IF formula can be replicated down a column.
+
+Example:
+
+C3 = 7
+
+=IF(C3>=10,"Very experienced","Not experienced")
+
+Copy down:
+
+C4
+C5
+C6...
+
+Explain why the reference to C3 should remain relative.
+
+Interactive:
+"Should C3 be absolute or relative?"
+
+Reveal:
+Relative.
+
+==================================================
+
+SLIDE 23 — NESTED FUNCTIONS
+
+Topic:
+20.1.12
+
+Definition:
+A nested function means one function is placed inside another function.
+
+Explain the concept simply.
+
+Use textbook-style nested IF example:
+
+>=10 → Very experienced
+>=5 → Experienced
+<5 → Not experienced
+
+Show the nested logic visually.
+
+Use:
+
+=IF(C3>=10,"Very experienced",IF(C3>=5,"Experienced","Not experienced"))
+
+Explain:
+- First condition
+- Second condition
+- Final result
+
+IMPORTANT:
+Explain that conditions must be placed in the correct logical order.
+
+Interactive:
+Give an employee with 12 years' experience.
+
+Ask:
+"Which result should appear?"
+
+Then show the formula logic.
+
+==================================================
+
+SLIDE 24 — ROUND AND INT
+
+Include this because it is explicitly covered in the textbook chapter.
+
+INT:
+Returns the whole-number part of a number.
+
+Example:
+=INT(B10)
+
+ROUND:
+Rounds a number to a specified number of decimal places.
+
+Examples:
+
+=ROUND(B10,0)
+=ROUND(A1,2)
+=ROUND(A1,1)
+=ROUND(A1,-1)
+=ROUND(A1,-2)
+
+Use textbook-style number:
+16.8
+
+INT:
+16
+
+ROUND to 0 decimal places:
+17
+
+Explain the difference:
+- INT removes the decimal/fraction part.
+- Formatting to zero decimal places only changes how the value is displayed.
+
+Interactive:
+Students predict results.
+
+==================================================
+
+SLIDE 25 — SUMIF
+
+Definition:
+SUMIF checks values against a condition and adds corresponding values from another range.
+
+Use textbook-style example:
+
+=SUMIF($B$3:$B$21,A35,$C$3:$C$21)
+
+Explain the three logical parts visually:
+- Range to check
+- Condition
+- Range to add
+
+Practical:
+Calculate total years of experience for:
+Programmers
+Engineers
+
+Interactive:
+Students select the correct formula.
+
+==================================================
+
+SLIDE 26 — LOOKUP FUNCTIONS INTRODUCTION
+
+Topic:
+20.1.12 / lookup section
+
+Explain:
+"Look up" in an exam question means retrieving information from a list.
+
+Introduce:
+
+LOOKUP
+HLOOKUP
+VLOOKUP
+
+Important:
+Explain that the word "look up" does not automatically mean the LOOKUP function.
+
+Use three clickable cards.
+
+==================================================
+
+SLIDE 27 — HLOOKUP
+
+Definition:
+HLOOKUP performs a horizontal lookup.
+
+Use a horizontal table:
+
+JobCode:
+1 | 2 | 3 | 4 | 5
+
+JobTitle:
+Director | Engineer | Analyst | Sales | Programmer
+
+Example:
+
+=HLOOKUP(B6,$B$2:$H$3,2)
+
+Explain:
+- Lookup value
+- Lookup range
+- Row number
+
+Interactive:
+Student is given JobCode 3.
+
+Question:
+"What Job Title should be returned?"
+
+Reveal:
+Analyst.
+
+==================================================
+
+SLIDE 28 — VLOOKUP
+
+Definition:
+VLOOKUP performs a vertical lookup.
+
+Use a vertical table.
+
+Example:
+
+=VLOOKUP(B3,client.csv!$A$2:$B$8,2,FALSE)
+
+Explain:
+- Lookup value
+- Table/range
+- Column number
+- FALSE for exact match
+
+Explain that lookup data is stored in the left/first column and returned data is to the right.
+
+Interactive:
+Give TaskCode 3.
+
+Ask:
+"Which client should be returned?"
+
+Then reveal.
+
+==================================================
+
+SLIDE 29 — EXACT MATCH IN VLOOKUP
+
+Focus on the final argument:
+
+FALSE
+
+Explain:
+FALSE asks Excel to find an exact match.
+
+Contrast briefly with TRUE:
+TRUE performs an approximate match.
+
+Use a small practical example.
+
+Interactive:
+Students choose:
+FALSE or TRUE?
+
+Scenario:
+"Only accept an exact TaskCode."
+
+Reveal:
+FALSE.
+
+==================================================
+
+SLIDE 30 — XLOOKUP
+
+Include because it is explicitly covered in the textbook.
+
+Explain:
+XLOOKUP can perform horizontal or vertical lookups and is more flexible than HLOOKUP/VLOOKUP.
+
+Show that it can retrieve values located before the lookup column.
+
+Use textbook-style scenario where TaskCode is to the right of Client.
+
+Explain:
+VLOOKUP cannot perform this backward lookup in the textbook scenario.
+
+Use XLOOKUP example at the appropriate level.
+
+IMPORTANT:
+Add a clearly visible note:
+
+"XLOOKUP is available in newer versions of Excel. If using older Excel, skip this section as advised by the textbook."
+
+Do NOT teach advanced XLOOKUP features beyond what the chapter covers.
+
+==================================================
+
+SLIDE 31 — EXTERNAL DATA SOURCES
+
+Topic:
+20.1.13
+
+Explain:
+Spreadsheet functions can retrieve data from another spreadsheet/file.
+
+Use:
+tasks.csv
+client.csv
+
+Show two separate tables/files visually.
+
+Explain:
+TaskCode in one file
+Client information in another file.
+
+Use a simple visual:
+
+tasks.csv
+TaskCode → Lookup → client.csv → Client
+
+Then show VLOOKUP/XLOOKUP concept.
+
+Interactive:
+Click "Source File"
+Click "Lookup Value"
+Click "Returned Data"
+
+==================================================
+
+SLIDE 32 — LOOKUP PRACTICAL CHALLENGE
+
+Create a complete lookup activity.
+
+Students have:
+TaskCode
+
+Separate client table.
+
+They must:
+1. Identify lookup value.
+2. Identify lookup array.
+3. Choose HLOOKUP/VLOOKUP/XLOOKUP.
+4. Create formula.
+5. Replicate formula.
+
+Use:
+"Hint"
+"Check Formula"
+"Reveal Result"
+
+Do not show all answers immediately.
+
+==================================================
+SECTION 3 — MANIPULATE DATA
+==================================================
+
+SLIDE 33 — SEARCH AND SELECT DATA
+
+Topic:
+20.2.1
+
+Definition:
+Searching for data means getting Excel to display only rows/columns matching search criteria.
+
+Introduce:
+- Filters
+- Text filters
+- Number filters
+- Multiple criteria
+
+Show a realistic employee table with filter dropdowns.
+
+Interactive:
+Click filter icon → reveal options.
+
+==================================================
+
+SLIDE 34 — TEXT FILTERS
+
+Teach:
+Search/filter data using text criteria.
+
+Examples:
+- Equals
+- Does not equal
+- Begins with
+- Ends with
+- Contains
+
+Create a practical activity:
+"Select only employees working on a particular job/client."
+
+Students choose the correct filter.
+
+==================================================
+
+SLIDE 35 — NUMBER FILTERS
+
+Teach:
+Number filtering using conditions such as:
+
+<5
+>=10
+Equals
+Greater than
+Less than
+
+Practical:
+"Show employees with less than 5 years' experience."
+
+Interactive:
+Students select the correct number filter.
+
+==================================================
+
+SLIDE 36 — MULTIPLE CRITERIA
+
+Teach filtering using two or more criteria.
+
+Use AND logic where appropriate.
+
+Example:
+Employees whose:
+- Name/job/client meets one condition
+AND
+- Another field meets another condition.
+
+Show filter menus visually.
+
+Interactive:
+Students build/select the correct combination.
+
+==================================================
+
+SLIDE 37 — WILDCARD SEARCHES
+
+Definition:
+A wildcard is a character used as a substitute for other characters.
+
+Teach the wildcard symbols used in the chapter:
+
+*
+Represents a series of characters.
+
+?
+Represents a single character.
+
+Use simple examples:
+
+Starts with:
+A*
+
+Ends with:
+*son
+
+Contains:
+*an*
+
+Single unknown character:
+A?i
+
+Interactive:
+Students choose which wildcard finds:
+- Names beginning with "A"
+- Names ending with "son"
+- Names containing "an"
+
+==================================================
+
+SLIDE 38 — SEARCH PRACTICAL CHALLENGE
+
+Create one realistic employee spreadsheet.
+
+Students must perform:
+
+Task 1:
+Find names beginning with a specific letter.
+
+Task 2:
+Find names ending with a specific pattern.
+
+Task 3:
+Find names containing specified characters.
+
+Task 4:
+Use two or more criteria.
+
+Use click-to-reveal solution steps.
+
+==================================================
+
+SLIDE 39 — SORT DATA
+
+Topic:
+20.2.2
+
+Definition:
+Sorting rearranges data into a specified order.
+
+Teach:
+- Ascending
+- Descending
+- Sorting by one field
+- Sorting by multiple fields
+- Custom Sort
+
+Use example:
+
+Sort by:
+Surname → Ascending
+
+Then:
+Forename → Ascending
+
+Show why the whole data set must be sorted, not just one column.
+
+==================================================
+
+SLIDE 40 — MULTI-LEVEL SORTING ACTIVITY
+
+Create a table.
+
+Challenge:
+
+"Sort the data into:
+1. Descending order of tutor name
+2. Ascending order of student forename"
+
+Students click:
+Custom Sort
+
+Then choose:
+Sort By
+Then By
+
+Interactive:
+Show correct sorting after "Check".
+
+==================================================
+SECTION 4 — PRESENT DATA
+==================================================
+
+SLIDE 41 — DISPLAY FORMULAE OR VALUES
+
+Topic:
+20.3.1
+
+Explain:
+A spreadsheet may need to display:
+- Calculated values
+- Formulae
+
+Show:
+
+VALUE:
+80
+
+FORMULA:
+=SUM(B4:B8)
+
+Introduce:
+Show Formulas.
+
+Also briefly introduce Formula Auditing where appropriate.
+
+Interactive:
+"Switch View"
+
+==================================================
+
+SLIDE 42 — SELECT DATA / ROWS / COLUMNS
+
+Explain:
+- Select a cell
+- Select multiple cells
+- Select a row
+- Select multiple rows
+- Select a column
+- Select multiple columns
+
+Show visual selection.
+
+Explain why correct selection matters before formatting or filtering.
+
+Mini activity:
+"Select the entire column C."
+
+==================================================
+
+SLIDE 43 — ADJUST ROW HEIGHT AND COLUMN WIDTH
+
+Topic:
+20.3.2
+
+Teach:
+- Change row height
+- Change column width
+- Make all content visible
+- Hide rows/columns where required
+- Unhide rows/columns
+
+Use before/after examples.
+
+Interactive:
+Students click "AutoFit / Resize" style control.
+
+Challenge:
+"Make the complete label visible."
+
+==================================================
+
+SLIDE 44 — WRAP TEXT
+
+Topic:
+20.3.3
+
+Explain:
+Wrap Text allows long text to appear on multiple lines within a cell.
+
+Show:
+
+BEFORE:
+Text cut off
+
+AFTER:
+Text wrapped across multiple lines
+
+Combine with:
+- Row height
+- Column width
+- Merge cells
+
+Practical activity:
+Students format a heading so that all text is visible.
+
+==================================================
+
+SLIDE 45 — ENHANCE A SPREADSHEET
+
+Topic:
+20.3.4
+
+Teach only the formatting features covered in the chapter:
+
+- Bold
+- Italic
+- Underline
+- Font size
+- Font colour
+- Background/fill colour
+- Pattern fill
+- Text orientation
+- Borders
+- Gridlines
+
+Use clickable formatting icons.
+
+When an icon is clicked:
+show a small example.
+
+Interactive:
+"Format this heading."
+
+Students select:
+Bold
+Font size
+Font colour
+Fill colour
+
+==================================================
+
+SLIDE 46 — BORDERS, GRIDLINES AND ALIGNMENT
+
+Focus on:
+- Borders
+- All Borders
+- Gridlines
+- Alignment
+- Text orientation
+
+Show realistic spreadsheet before/after.
+
+Explain:
+Borders can emphasise selected cells.
+Gridlines may apply to the spreadsheet.
+
+Practical:
+Students apply borders to a selected table.
+
+==================================================
+
+SLIDE 47 — FORMAT NUMERIC DATA
+
+Topic:
+20.3.5
+
+Definition:
+Formatting changes how a number is displayed without necessarily changing its stored value.
+
+Teach:
+- Decimal places
+- Integer display
+- Currency
+- Percentage
+- Different currency symbols
+
+Use examples:
+
+12.8000 → 12.80
+
+0.75 → 75%
+
+£12.80
+€12.80
+¥13
+
+Interactive:
+Click a number format → show before/after.
+
+==================================================
+
+SLIDE 48 — DECIMAL PLACES VS INT/ROUND
+
+Important distinction from the textbook.
+
+Show:
+
+Value:
+16.8
+
+Format to 0 decimal places:
+17 displayed, but underlying value remains 16.8.
+
+INT:
+=INT(16.8)
+→ 16
+
+ROUND:
+=ROUND(16.8,0)
+→ 17
+
+Explain this clearly but briefly.
+
+Interactive:
+Students choose:
+"Which method changes the actual calculated result?"
+"Which method changes only the display?"
+
+==================================================
+
+SLIDE 49 — CONDITIONAL FORMATTING
+
+Topic:
+20.3.6
+
+Definition:
+Conditional formatting changes the display format of cells when specified conditions are met.
+
+Use textbook-style categories:
+
+Not experienced
+Experienced
+Very experienced
+
+Create rules that apply different formatting based on the cell contents.
+
+Explain:
+- Select range
+- Conditional Formatting
+- Choose rule
+- Set condition
+- Set format
+
+Interactive:
+Click a rule → reveal the resulting formatting.
+
+==================================================
+
+SLIDE 50 — CONDITIONAL FORMATTING PRACTICAL
+
+Give students a table of employees.
+
+Challenge:
+Format cells based on their text/category.
+
+Students create rules for:
+- Not experienced
+- Experienced
+- Very experienced
+
+Use:
+"Create Rule"
+"Check Rule"
+"Reveal Result"
+
+Also include the chapter activity where cell background depends on house colour.
+
+==================================================
+
+SLIDE 51 — PAGE ORIENTATION
+
+Topic:
+20.3.7
+
+Teach:
+- Portrait
+- Landscape
+
+Explain:
+Landscape can be useful when displaying formulae or wide spreadsheets.
+
+Show side-by-side:
+Portrait
+Landscape
+
+Interactive:
+Student chooses the appropriate orientation for a wide spreadsheet.
+
+==================================================
+
+SLIDE 52 — PRINT PAGE LAYOUT
+
+Topic:
+20.3.8
+
+Teach:
+- Print preview
+- Page setup
+- Scaling
+- Pages wide
+- Pages tall
+- Paper size where relevant
+- Page orientation
+- Margins/page layout
+
+Explain:
+If a spreadsheet is set to one page wide, the content must still be readable.
+
+Interactive:
+Show print preview before/after scaling.
+
+Challenge:
+"Make the spreadsheet fit one page wide without making the text unreadable."
+
+==================================================
+
+SLIDE 53 — PRINT GRIDLINES AND HEADINGS
+
+Teach:
+
+Gridlines:
+Can be displayed when printing.
+
+Row/column headings:
+Can also be displayed when printing.
+
+Show:
+Page Layout → Sheet Options → Gridlines → Print
+Page Layout → Sheet Options → Headings → Print
+
+Interactive:
+Click checkboxes and show print-preview change.
+
+==================================================
+
+SLIDE 54 — SPECIFIED PRINT AREA
+
+Teach:
+If only part of a spreadsheet must be printed:
+
+1. Highlight required area.
+2. File → Print.
+3. Select Print Selection.
+
+Create before/after print preview.
+
+Interactive:
+"Select the area that should be printed."
+
+==================================================
+
+SLIDE 55 — FINAL PAPER 2 PRACTICAL CHALLENGE
+
+Title:
+"COMPLETE THE SPREADSHEET CHALLENGE"
+
+Create a realistic exam-style spreadsheet.
+
+Students must complete a sequence:
+
+STEP 1
+Enter data accurately.
+
+STEP 2
+Edit data where required.
+
+STEP 3
+Create formulae using cell references.
+
+STEP 4
+Use relative/absolute references.
+
+STEP 5
+Replicate formulae.
+
+STEP 6
+Use SUM / AVERAGE / MAX / MIN.
+
+STEP 7
+Use COUNT / COUNTA / COUNTIF.
+
+STEP 8
+Use IF / nested IF.
+
+STEP 9
+Use SUMIF where required.
+
+STEP 10
+Use a lookup function.
+
+STEP 11
+Search/filter data.
+
+STEP 12
+Sort data.
+
+STEP 13
+Format numeric data.
+
+STEP 14
+Apply conditional formatting.
+
+STEP 15
+Adjust rows/columns and wrap text.
+
+STEP 16
+Set page orientation and print layout.
+
+STEP 17
+Show values and formulae.
+
+Create a progress checklist:
+☐ Complete
+☐ Check
+☐ Submit
+
+==================================================
+
+SLIDE 56 — FINAL KNOWLEDGE CHECK
+
+Create an interactive quiz covering the whole chapter.
+
+Questions should test:
+
+1. What is a cell?
+2. What is a formula?
+3. What is a function?
+4. What is relative referencing?
+5. What is absolute referencing?
+6. What does $ mean?
+7. What is mixed referencing?
+8. What does SUM do?
+9. What does AVERAGE do?
+10. What does COUNT do?
+11. What does COUNTA do?
+12. What does COUNTIF do?
+13. What does IF do?
+14. What is a nested function?
+15. What does VLOOKUP do?
+16. What does HLOOKUP do?
+17. What is XLOOKUP used for?
+18. What is a wildcard?
+19. What does sorting do?
+20. What does conditional formatting do?
+21. What is Wrap Text?
+22. What is the difference between Portrait and Landscape?
+23. Why might formulae need to be displayed?
+24. What is Print Selection?
+
+Use:
+Click → Answer → Explanation.
+
+==================================================
+
+SLIDE 57 — EXAM CHECKLIST
+
+Title:
+"Paper 2 Spreadsheet Checklist"
+
+Create a visual checklist:
+
+DATA
+☐ Enter accurately
+☐ Edit correctly
+☐ Insert/delete only when required
+
+FORMULAE
+☐ Operators
+☐ Cell references
+☐ BODMAS/BIDMAS
+☐ Relative
+☐ Absolute
+☐ Mixed
+☐ Replication
+
+FUNCTIONS
+☐ SUM
+☐ AVERAGE
+☐ MAX
+☐ MIN
+☐ COUNT
+☐ COUNTA
+☐ COUNTIF
+☐ IF
+☐ Nested IF
+☐ SUMIF
+☐ INT
+☐ ROUND
+
+LOOKUPS
+☐ LOOKUP
+☐ HLOOKUP
+☐ VLOOKUP
+☐ XLOOKUP
+☐ External data source
+
+DATA MANIPULATION
+☐ Search
+☐ Filters
+☐ Multiple criteria
+☐ Wildcards
+☐ Sort
+
+PRESENTATION
+☐ Formula/value view
+☐ Row height
+☐ Column width
+☐ Wrap Text
+☐ Merge cells
+☐ Formatting
+☐ Numeric formatting
+☐ Conditional formatting
+☐ Portrait/Landscape
+☐ Print layout
+☐ Gridlines
+☐ Headings
+☐ Print selection
+
+==================================================
+
+SLIDE 58 — EXIT TICKET
+
+Ask students to complete:
+
+1. Write one example of an absolute reference.
+2. Write one example of a relative reference.
+3. Which function finds the average?
+4. Which function counts cells meeting a condition?
+5. Which lookup is used for horizontal data?
+6. What does FALSE mean in the VLOOKUP example?
+7. What is a wildcard?
+8. What is conditional formatting?
+9. When would you use Landscape orientation?
+10. What is the difference between INT and formatting to zero decimal places?
+
+Use click-to-reveal answers.
+
+Finish with:
+"Spreadsheet skills complete – Paper 2 practice next!"
+
+==================================================
+TEACHER NOTES / LESSON PLAN
+==================================================
+
+For every slide, create concise TEACHER NOTES containing:
+
+1. Learning objective
+2. What teacher explains
+3. What teacher demonstrates
+4. Student activity
+5. Expected student response
+6. Common mistake
+7. Quick assessment
+8. Approximate time
+
+Do not put long teacher notes visibly on the slide.
+
+==================================================
+COMPLETE LESSON STRUCTURE
+==================================================
+
+Divide the lesson into practical teaching blocks:
+
+BLOCK 1:
+Spreadsheet basics
+Slides 1–5
+
+BLOCK 2:
+Mathematical operations and references
+Slides 6–10
+
+BLOCK 3:
+Data accuracy, merge cells and named ranges
+Slides 11–16
+
+BLOCK 4:
+Functions
+Slides 17–25
+
+BLOCK 5:
+Lookups and external data
+Slides 26–32
+
+BLOCK 6:
+Search, filters, wildcards and sorting
+Slides 33–40
+
+BLOCK 7:
+Presentation and formatting
+Slides 41–50
+
+BLOCK 8:
+Printing and page layout
+Slides 51–54
+
+BLOCK 9:
+Exam practice and assessment
+Slides 55–58
+
+==================================================
+PEDAGOGICAL REQUIREMENTS
+==================================================
+
+Use the following teaching cycle throughout:
+
+1. EXPLAIN
+Short definition.
+
+2. SHOW
+Visual spreadsheet example.
+
+3. DO
+Teacher demonstrates actual working.
+
+4. TRY
+Students perform a small task.
+
+5. CHECK
+Students predict/select an answer.
+
+6. REVEAL
+Show correct answer and working.
+
+7. EXAM
+Give a short Cambridge-style practical instruction.
+
+Do not turn the presentation into a textbook copied onto slides.
+
+Keep definitions short but do not omit important definitions.
+
+Use practical activities more than paragraphs.
+
+Make students interact with the spreadsheet examples.
+
+==================================================
+FINAL QUALITY CHECK
+==================================================
+
+Before generating the final presentation, verify:
+
+- All major Chapter 20 topics are covered.
+- No important topic from the supplied chapter has been omitted.
+- Definitions are included.
+- Practical examples are included.
+- Formula syntax is correct according to the textbook examples.
+- Relative/absolute/mixed references are clearly distinguished.
+- Functions are demonstrated practically.
+- Lookup functions are demonstrated practically.
+- Search/filter/wildcard/sort skills are included.
+- Formatting and printing skills are included.
+- Activities are included throughout.
+- Interactive click-to-reveal elements are included.
+- The existing theme is preserved.
+- Previous chapter icons are removed.
+- New spreadsheet-specific icons are used.
+- No unnecessary advanced spreadsheet content is introduced.
+- The presentation is suitable for Cambridge IGCSE ICT Paper 2 preparation.
